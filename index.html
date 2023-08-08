@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CRUD Operations with REST API</title>
+    <style>
+       body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+    .container2{
+      margin-left: 25px;
+    }
+    
+    #container {
+        width: 80%;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+    h1 {
+margin-left:10% ;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+     
+      th,
+      td {
+        border: 1px solid black;
+        text-align: center;
+      } 
+      h3{
+        font-size: 18px;
+        text-decoration: underline;
+        color: blueviolet;
+      }
+
+      input[type="text"] {
+        width: 40%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+    }
+
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+     
+    </style>
+  </head>
+  <body>
+    <h1>PROJECT on REST API</h1>
+    <div class="container2">
+
+      <label for="title">ProductName:</label>
+      <input type="text" id="productName" />
+  <br>
+      <label for="description">Description:</label>
+      <input type="text" id="description" />
+  <br>
+      <label for="price">Price:</label>
+      <input type="text" id="price" />
+  <br>
+      <label for="quantity">Quantity:</label>
+      <input type="text" id="quantity" />
+  <br>
+      <button onclick="createProduct()">Add List</button>
+  
+    </div>
+
+    <ul id="todoList"></ul>
+
+    <div id="container">
+      <h3>Products in Stores</h3>
+      <table id="table1">
+        <thead>
+            <tr>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Buy 1</th>
+          <th>Buy 2</th>
+          <th>Buy 3</th>
+
+        </tr>
+        </thead>
+    <tbody id="tbody"> </tbody> 
+      </table>
+
+      </table>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js    "></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
